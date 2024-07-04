@@ -1,9 +1,11 @@
 import './App.scss'
+import Title from './components/Title'
 
 function App() {
   return (
     <>
-      <div className={'detail'} autoFocus={true}>
+      <div>
+        <Title></Title>
       </div>
     </>
   )
