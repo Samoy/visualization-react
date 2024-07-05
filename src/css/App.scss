@@ -1,11 +1,11 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background: url('assets/images/bg.jpg');
+  background: url('@/assets/images/bg.jpg');
   color: #fff;
 
   @font-face {
     font-family: Digital;
-    src: url('assets/fonts/DS-DIGI.woff2');
+    src: url('@/assets/fonts/DS-DIGI.woff2');
   }
 }
