@@ -1,12 +1,10 @@
 import './App.scss'
-import Title from './components/Title'
+import Header from './components/Header'
 
 function App() {
   return (
     <>
-      <div>
-        <Title></Title>
-      </div>
+      <Header></Header>
     </>
   )
 }
