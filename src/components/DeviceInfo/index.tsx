@@ -1,16 +1,17 @@
 import styles from './index.module.scss'
 import { DeviceStatus } from '@/models/device.ts'
+import CountUp from 'react-countup'
 
 interface Props {
   width?: number
   height?: number
   status?: DeviceStatus
-  text: string | number
+  value: string | number
   legend: string | number
 }
 
 function DeviceInfo(props: Props) {
-  const { width = 100, height = 100, status = DeviceStatus.normal, text, legend } = props
+  const { width = 100, height = 100, status = DeviceStatus.normal, value, legend } = props
   return (
     <div className={styles.container}>
       <div
@@ -21,7 +22,7 @@ function DeviceInfo(props: Props) {
         }}
         data-status={status}
       >
-        {text}
+        <CountUp end={value as number} delay={Math.random()} />
       </div>
       <div className={styles.legend} data-status={status}>
         {legend}

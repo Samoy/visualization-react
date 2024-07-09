@@ -1,31 +1,35 @@
 import StrokeBorderAnimatedContainer from '@/components/StrokeBorderAnimatedContainer'
 import { HTMLAttributes } from 'react'
 import styles from './index.module.scss'
-import { DeviceStatus } from '@/models/device.ts'
+import { DeviceOverview, DeviceStatus } from '@/models/device.ts'
 import DeviceInfo from '@/components/DeviceInfo'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
-const deviceList = [
+const deviceList: DeviceOverview[] = [
   {
+    id: 'total',
     name: '设备总数',
     status: DeviceStatus.normal,
-    num: 200,
+    value: 253,
   },
   {
+    id: 'online',
     name: '在线设备',
     status: DeviceStatus.health,
-    num: 100,
+    value: 123,
   },
   {
+    id: 'fault',
     name: '故障设备',
     status: DeviceStatus.warning,
-    num: 10,
+    value: 48,
   },
   {
+    id: 'offline',
     name: '离线设备',
     status: DeviceStatus.danger,
-    num: 20,
+    value: 79,
   },
 ]
 
@@ -42,7 +46,7 @@ function Overview(props: Props) {
           </div>
           <div className={styles.content}>
             {deviceList.map((item) => (
-              <DeviceInfo key={item.name} text={item.num} legend={item.name} status={item.status} />
+              <DeviceInfo key={item.id} value={item.value} legend={item.name} status={item.status} />
             ))}
           </div>
         </div>

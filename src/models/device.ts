@@ -4,3 +4,10 @@ export enum DeviceStatus {
   warning = 'warning',
   danger = 'danger',
 }
+
+export interface DeviceOverview {
+  name: string
+  status: DeviceStatus
+  value: number
+  id: string
+}
