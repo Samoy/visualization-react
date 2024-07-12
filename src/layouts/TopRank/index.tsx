@@ -16,11 +16,11 @@ function TopRank() {
         value: 200,
       },
       {
-        name: '饮食',
+        name: '餐饮',
         value: 1200,
       },
       {
-        name: '日常',
+        name: '百货',
         value: 400,
       },
       {
@@ -36,7 +36,7 @@ function TopRank() {
         value: 300,
       },
       {
-        name: '水电气暖',
+        name: '缴费',
         value: 800,
       },
     ].sort((a, b) => b.value - a.value),

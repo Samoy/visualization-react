@@ -5,6 +5,7 @@ import * as echarts from 'echarts/core'
 import { BarChart, BarSeriesOption } from 'echarts/charts'
 import { CanvasRenderer } from 'echarts/renderers'
 import { GridComponent, LegendComponent, TooltipComponent } from 'echarts/components'
+import { LinearGradientObject } from 'echarts'
 
 echarts.use([BarChart, CanvasRenderer, GridComponent, LegendComponent, TooltipComponent])
 
@@ -13,16 +14,42 @@ function Trend() {
     {
       name: '收入',
       type: 'bar',
-      barWidth: 20,
-      barGap: 0,
+      barWidth: 12,
       data: [120, 132, 101, 134, 90, 230, 210],
+      itemStyle: {
+        color: {
+          x: 0,
+          x2: 0,
+          y: 0,
+          y2: 1,
+          colorStops: [
+            { offset: 0, color: '#83bff6' },
+            { offset: 1, color: '#188df0' },
+          ],
+          type: 'linear',
+        } as LinearGradientObject,
+        borderRadius: 6,
+      },
     },
     {
       name: '支出',
       type: 'bar',
-      barWidth: 20,
-      barGap: 0,
+      barWidth: 12,
       data: [220, 182, 191, 234, 290, 330, 310],
+      itemStyle: {
+        color: {
+          x: 0,
+          x2: 0,
+          y: 0,
+          y2: 1,
+          colorStops: [
+            { offset: 0, color: '#eea403' },
+            { offset: 1, color: '#ee8903' },
+          ],
+          type: 'linear',
+        } as LinearGradientObject,
+        borderRadius: 6,
+      },
     },
   ]
   return (
@@ -33,6 +60,7 @@ function Trend() {
           style={{ width: '100%', height: '100%' }}
           echarts={echarts}
           option={{
+            color: ['#3de7c9', '#eea403'],
             xAxis: [
               {
                 type: 'category',
@@ -50,6 +78,7 @@ function Trend() {
             ],
             legend: {
               itemHeight: 10,
+              borderRadius: 10,
               textStyle: {
                 color: '#ffffff',
               },
