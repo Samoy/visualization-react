@@ -43,7 +43,7 @@ function TopRank() {
     waitTime: 3000,
   }
   return (
-    <Card width={'30%'} height={400}>
+    <Card width={'100%'} height={400}>
       <div>本月消费排行榜</div>
       <CapsuleChart config={config} style={{ width: '100%', height: '100%' }} />
     </Card>

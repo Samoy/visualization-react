@@ -12,5 +12,17 @@
   .main {
     display: flex;
     padding: 0 12px;
+
+    .top-left {
+      width: 30%;
+    }
+
+    .top-middle {
+      width: calc(40% - 24px) !important;
+    }
+
+    .top-right {
+      width: 30%;
+    }
   }
 }
