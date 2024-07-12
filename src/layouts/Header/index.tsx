@@ -14,7 +14,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>
-        <span className={styles.text}>智能家居可视化平台</span>
+        <span className={styles.text}>智慧园区可视化平台</span>
       </h1>
       <time dateTime={time} className={styles.time}>
         {time}

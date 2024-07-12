@@ -1,13 +1,18 @@
 import './css/App.scss'
 import Header from '@/layouts/Header'
-import Overview from '@/layouts/Overview'
+import { FullScreenContainer } from '@jiaminghi/data-view-react'
+import TopRank from '@/layouts/TopRank'
+import Revenue from './layouts/Revenue'
 
 function App() {
   return (
-    <>
+    <FullScreenContainer>
       <Header></Header>
-      <Overview></Overview>
-    </>
+      <main className="main">
+        <TopRank></TopRank>
+        <Revenue></Revenue>
+      </main>
+    </FullScreenContainer>
   )
 }
 
