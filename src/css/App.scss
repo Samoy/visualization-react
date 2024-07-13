@@ -11,19 +11,64 @@
 
   .main {
     display: flex;
+    height: calc(100% - 100px);
     padding: 0 12px;
 
-    .top-left {
+    .left {
       width: 30%;
+
+      .top-left {
+        width: 100%;
+        height: calc(55% - 12px);
+      }
+
+      .bottom-left {
+        width: 100%;
+        height: calc(45% - 12px);
+        margin-top: 12px;
+      }
     }
 
-    .top-middle {
-      width: calc(40% - 24px) !important;
+    .center {
+      width: calc(40% - 24px);
+      height: 100%;
       margin: 0 12px;
+
+      .top-center {
+        width: 100%;
+        height: calc(20% - 12px);
+      }
+
+      .middle-center {
+        width: 100%;
+        height: calc(40% - 12px);
+        margin-top: 12px;
+      }
+
+      .bottom-center {
+        width: 100%;
+        height: calc(40% - 12px);
+        margin-top: 12px;
+      }
     }
 
-    .top-right {
+    .right {
       width: 30%;
+      height: 100%;
+
+      .top-right {
+        height: calc(24% - 12px);
+      }
+
+      .middle-right {
+        height: calc(38% - 12px);
+        margin-top: 12px;
+      }
+
+      .bottom-right {
+        height: calc(38% - 12px);
+        margin-top: 12px;
+      }
     }
   }
 }

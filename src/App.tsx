@@ -5,21 +5,36 @@ import TopRank from '@/layouts/TopRank'
 import Revenue from './layouts/Revenue'
 import Trend from './layouts/Trend'
 import Balance from './layouts/Balance'
+import Recent from '@/layouts/Recent'
 
 function App() {
   return (
     <FullScreenContainer>
       <Header></Header>
       <main className="main">
-        <div className="top-left">
-          <TopRank></TopRank>
+        <div className={'left'}>
+          <div className="top-left">
+            <TopRank></TopRank>
+          </div>
+          <div className={'bottom-left'}></div>
         </div>
-        <div className="top-middle">
-          <Revenue></Revenue>
-          <Trend></Trend>
+        <div className={'center'}>
+          <div className="top-center">
+            <Revenue></Revenue>
+          </div>
+          <div className={'middle-center'}>
+            <Trend></Trend>
+          </div>
+          <div className={'bottom-center'}></div>
         </div>
-        <div className="top-right">
-          <Balance></Balance>
+        <div className={'right'}>
+          <div className="top-right">
+            <Balance></Balance>
+          </div>
+          <div className={'middle-right'}>
+            <Recent></Recent>
+          </div>
+          <div className={'bottom-right'}></div>
         </div>
       </main>
     </FullScreenContainer>

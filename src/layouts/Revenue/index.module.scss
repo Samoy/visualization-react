@@ -2,7 +2,6 @@
 
 .container {
   width: 100%;
-  height: 130px !important;
 
   .content {
     display: flex;
@@ -14,11 +13,12 @@
 
       .countup {
         display: flex;
+        height: calc(100% - 24px);
         align-items: center;
         justify-content: center;
         margin-top: 10px;
         color: $primary-color;
-        font-size: 40px;
+        font-size: 48px;
         text-align: center;
       }
     }

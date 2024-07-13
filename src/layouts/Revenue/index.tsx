@@ -2,6 +2,7 @@ import styles from './index.module.scss'
 import Card from '@/components/Card'
 import Progress from '@/components/Progress'
 import CountUp from 'react-countup'
+
 /**
  * 收入
  */
