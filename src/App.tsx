@@ -4,6 +4,7 @@ import { FullScreenContainer } from '@jiaminghi/data-view-react'
 import TopRank from '@/layouts/TopRank'
 import Revenue from './layouts/Revenue'
 import Trend from './layouts/Trend'
+import Balance from './layouts/Balance'
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
           <Revenue></Revenue>
           <Trend></Trend>
         </div>
-        <div className="top-right"></div>
+        <div className="top-right">
+          <Balance></Balance>
+        </div>
       </main>
     </FullScreenContainer>
   )

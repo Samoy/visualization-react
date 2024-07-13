@@ -1,0 +1,25 @@
+@import '@/css/variable';
+
+.container {
+  height: 150px;
+
+  /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+  :global(.border-box-content) {
+    display: flex;
+    width: unset !important;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .coutup {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 35px;
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+}
