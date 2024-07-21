@@ -7,6 +7,7 @@ import Trend from './layouts/Trend'
 import Balance from './layouts/Balance'
 import Recent from '@/layouts/Recent'
 import ConsumeCategory from '@/layouts/ConsumeCategory'
+import Member from '@/layouts/Member'
 
 function App() {
   return (
@@ -28,7 +29,9 @@ function App() {
           <div className={'middle-center'}>
             <Trend></Trend>
           </div>
-          <div className={'bottom-center'}></div>
+          <div className={'bottom-center'}>
+            <Member></Member>
+          </div>
         </div>
         <div className={'right'}>
           <div className="top-right">
