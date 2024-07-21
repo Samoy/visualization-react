@@ -6,6 +6,7 @@ import Revenue from './layouts/Revenue'
 import Trend from './layouts/Trend'
 import Balance from './layouts/Balance'
 import Recent from '@/layouts/Recent'
+import ConsumeCategory from '@/layouts/ConsumeCategory'
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
           <div className="top-left">
             <TopRank></TopRank>
           </div>
-          <div className={'bottom-left'}></div>
+          <div className={'bottom-left'}>
+            <ConsumeCategory></ConsumeCategory>
+          </div>
         </div>
         <div className={'center'}>
           <div className="top-center">

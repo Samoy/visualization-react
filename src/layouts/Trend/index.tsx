@@ -53,9 +53,9 @@ function Trend() {
     },
   ]
   return (
-    <Card width={'100%'} height={256} className={styles.container}>
+    <Card className={styles.container}>
       <div>收支趋势</div>
-      <div style={{ width: '100%', height: 'calc(100% - 24px)' }}>
+      <div className={styles.chart}>
         <ReactEChartsCore
           style={{ width: '100%', height: '100%' }}
           echarts={echarts}
