@@ -8,6 +8,7 @@ import Balance from './layouts/Balance'
 import Recent from '@/layouts/Recent'
 import ConsumeCategory from '@/layouts/ConsumeCategory'
 import Member from '@/layouts/Member'
+import PayType from '@/layouts/PayType'
 
 function App() {
   return (
@@ -40,7 +41,9 @@ function App() {
           <div className={'middle-right'}>
             <Recent></Recent>
           </div>
-          <div className={'bottom-right'}></div>
+          <div className={'bottom-right'}>
+            <PayType></PayType>
+          </div>
         </div>
       </main>
     </FullScreenContainer>
